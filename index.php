@@ -14,7 +14,8 @@
         <input type="text" name="name" placeholder="Imie">
         <input type="text" name="surname" placeholder="Nazwisko">
         <input type="password" name="password" placeholder="Hasło">
-        <!-- <?php
+        <select name="class">
+            <?php
                 require_once "includes/dbh.inc.php";
                 $query = "SELECT * FROM class_group;";
                 $stmt = $pdo->query($query);
@@ -22,13 +23,14 @@
                 foreach ($classes as $class) {
                     echo "<option value='" . $class["id"] . "'>" . $class["name"] . "</option>";
                 }
-            ?> -->
+            ?>
+        <select>
         <input type="checkbox" name="admin" placeholder="admin" default="false">
         <input type="checkbox" name="teacher" placeholder="teacher" default="false">
         <input type="text" name="nickname" placeholder="Login">
         <button type="submit" name="submit">Twórz</button>
     </form>
-
+    
     <h3>Tworzenie klas</h3>
     <form action="includes/formhandler.inc.php" method="post">
         <input type="text" name="name" placeholder="NazwaKlasy">
