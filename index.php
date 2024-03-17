@@ -24,7 +24,7 @@
                     echo "<option value='" . $class["id"] . "'>" . $class["name"] . "</option>";
                 }
             ?>
-        <select>
+        </select>
         <input type="checkbox" name="admin" placeholder="admin" default="false">
         <input type="checkbox" name="teacher" placeholder="teacher" default="false">
         <input type="text" name="nickname" placeholder="Login">
