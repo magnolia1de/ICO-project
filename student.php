@@ -7,7 +7,7 @@
 </head>
 <body>
     <div class="taskbar">
-        <button>Utwórz post</button>
+        <h3>Witaj, <?php echo $nickname; ?></h3>
         <button>Wyloguj się</button>
     </div>
 
@@ -15,5 +15,7 @@
         <h3>Wiadomości</h3>
         <!-- wiadomości z bazy danych -->
     </div>
+
+    <button>Utwórz post</button>
 </body>
 </html>

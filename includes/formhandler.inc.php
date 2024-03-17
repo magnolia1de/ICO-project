@@ -15,10 +15,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $query = "INSERT INTO users (name, surname, pwd, class_id, admin, teacher, nickname) VALUES
         (?, ?, ?, ?, ?, ?, ?);";
 
-        $class_id = "SELECT id FROM class_group WHERE name = $class;";
-
-        $class = $class_id;
-
         $stmt = $pdo->prepare($query);
 
         $stmt->execute([$name, $surname, $pwd, $class, $admin, $teacher, $nickname]);
